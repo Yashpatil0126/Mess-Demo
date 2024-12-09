@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Management - Feedback</title>
+    <link rel="stylesheet" href="Feedback.css">
+</head>
+<body>
+    <div class="feedback-container">
+        <h1>Mess Feedback System</h1>
+        
+        <div class="feedback-summary">
+            <div class="summary-card overall-rating">
+                <h3>Overall Rating</h3>
+                <div class="stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                </div>
+                <p>4.2 / 5.0</p>
+                <small>Based on 45 reviews</small>
+            </div>
+            <div class="summary-card recent-feedback">
+                <h3>Recent Feedback</h3>
+                <p>"Great food and service!"</p>
+                <small>- John Doe, 2 days ago</small>
+            </div>
+        </div>
+
+        <div class="feedback-form-section">
+            <h2>Submit Your Feedback</h2>
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="memberName">Your Name</label>
+                    <select id="memberName" required>
+                        <option value="">Select Your Name</option>
+                        <option value="john">John Doe</option>
+                        <option value="jane">Jane Smith</option>
+                        <option value="mike">Mike Johnson</option>
+                    </select>
+                </div>
+
+                <div class="form-group rating-input">
+                    <label>Your Rating</label>
+                    <div class="star-rating">
+                        <input type="radio" name="rating" value="5" id="star5">
+                        <label for="star5">★</label>
+                        <input type="radio" name="rating" value="4" id="star4">
+                        <label for="star4">★</label>
+                        <input type="radio" name="rating" value="3" id="star3">
+                        <label for="star3">★</label>
+                        <input type="radio" name="rating" value="2" id="star2">
+                        <label for="star2">★</label>
+                        <input type="radio" name="rating" value="1" id="star1">
+                        <label for="star1">★</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedbackCategory">Feedback Category</label>
+                    <select id="feedbackCategory" required>
+                        <option value="">Select Category</option>
+                        <option value="food">Food Quality</option>
+                        <option value="service">Service</option>
+                        <option value="cleanliness">Cleanliness</option>
+                        <option value="hygiene">Hygiene</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedbackDetails">Detailed Feedback</label>
+                    <textarea id="feedbackDetails" rows="4" placeholder="Share your detailed feedback here..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="suggestions">Suggestions for Improvement</label>
+                    <textarea id="suggestions" rows="3" placeholder="Any suggestions to improve our mess?"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Feedback</button>
+            </form>
+        </div>
+
+        <div class="feedback-history">
+            <h2>Previous Feedbacks</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Member</th>
+                        <th>Category</th>
+                        <th>Rating</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>25 Nov 2024</td>
+                        <td>John Doe</td>
+                        <td>Food Quality</td>
+                        <td>
+                            <span class="rating">★★★★☆</span>
+                        </td>
+                        <td><span class="status-reviewed">Reviewed</span></td>
+                    </tr>
+                    <tr>
+                        <td>15 Oct 2024</td>
+                        <td>Jane Smith</td>
+                        <td>Service</td>
+                        <td>
+                            <span class="rating">★★★★★</span>
+                        </td>
+                        <td><span class="status-reviewed">Reviewed</span></td>
+                    </tr>
+                    <tr>
+                        <td>05 Sep 2024</td>
+                        <td>Mike Johnson</td>
+                        <td>Cleanliness</td>
+                        <td>
+                            <span class="rating">★★★☆☆</span>
+                        </td>
+                        <td><span class="status-reviewed">Reviewed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mess Management - Menu Browsing</title>
+    <link rel="stylesheet" href="MenuBrowsing.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Mess Management System</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Menu</a></li>
+                    <li><a href="#">Meal Booking</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="menu-section">
+                <h2>Weekly Menu</h2>
+                <div class="menu-tabs">
+                    <button class="tab active" data-day="monday">Monday</button>
+                    <button class="tab" data-day="tuesday">Tuesday</button>
+                    <button class="tab" data-day="wednesday">Wednesday</button>
+                    <button class="tab" data-day="thursday">Thursday</button>
+                    <button class="tab" data-day="friday">Friday</button>
+                    <button class="tab" data-day="saturday">Saturday</button>
+                    <button class="tab" data-day="sunday">Sunday</button>
+                </div>
+
+                <div class="menu-content">
+                    <div class="menu-day active" id="monday">
+                        <div class="meal-section">
+                            <h3>Breakfast</h3>
+                            <div class="meal-items">
+                                <div class="meal-item">
+                                    <img src="/api/placeholder/100/100" alt="Meal">
+                                    <div class="meal-details">
+                                        <h4>Masala Dosa</h4>
+                                        <p>Served with Coconut Chutney</p>
+                                    </div>
+                                </div>
+                                <div class="meal-item">
+                                    <img src="/api/placeholder/100/100" alt="Meal">
+                                    <div class="meal-details">
+                                        <h4>Upma</h4>
+                                        <p>With Vegetables</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meal-section">
+                            <h3>Lunch</h3>
+                            <div class="meal-items">
+                                <div class="meal-item">
+                                    <img src="/api/placeholder/100/100" alt="Meal">
+                                    <div class="meal-details">
+                                        <h4>Jeera Rice</h4>
+                                        <p>With Dal and Vegetable Curry</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meal-section">
+                            <h3>Dinner</h3>
+                            <div class="meal-items">
+                                <div class="meal-item">
+                                    <img src="/api/placeholder/100/100" alt="Meal">
+                                    <div class="meal-details">
+                                        <h4>Roti</h4>
+                                        <p>With Paneer Butter Masala</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Mess Management System</p>
+        </footer>
+    </div>
+</body>
+</html>

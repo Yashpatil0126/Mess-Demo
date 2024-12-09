@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Membership Management</title>
+    <link rel="stylesheet" href="MembershipManagement.css">
+</head>
+<body>
+    <div class="membership-container">
+        <h1>Mess Membership Management</h1>
+        
+        <div class="member-registration">
+            <h2>New Member Registration</h2>
+            <form id="memberRegistrationForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="membershipType">Membership Type</label>
+                    <select id="membershipType" name="membershipType" required>
+                        <option value="">Select Membership Type</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="quarterly">Quarterly</option>
+                        <option value="annual">Annual</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="startDate">Membership Start Date</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                </div>
+                
+                <button type="submit" class="btn-register">Register Member</button>
+            </form>
+        </div>
+        
+        <div class="member-list">
+            <h2>Current Members</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>Membership Type</th>
+                        <th>Start Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>9876543210</td>
+                        <td>Monthly</td>
+                        <td>2024-01-15</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>8765432109</td>
+                        <td>Quarterly</td>
+                        <td>2024-02-01</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

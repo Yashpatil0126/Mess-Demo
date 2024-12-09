@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Inventory Management</title>
+    <link rel="stylesheet" href="InventoryManagement.css">
+</head>
+<body>
+    <div class="container">
+        <header class="dashboard-header">
+            <h1>Inventory Management</h1>
+            <div class="header-stats">
+                <div class="stat-card">
+                    <h3>Total Items</h3>
+                    <p class="stat-number">254</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Low Stock</h3>
+                    <p class="stat-number">17</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Expired Items</h3>
+                    <p class="stat-number">5</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="inventory-actions">
+            <button class="btn btn-primary">Add New Item</button>
+            <button class="btn btn-secondary">Generate Report</button>
+            <div class="search-container">
+                <input type="text" placeholder="Search inventory..." class="search-input">
+                <button class="btn btn-search">Search</button>
+            </div>
+        </section>
+
+        <section class="inventory-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Category</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total Value</th>
+                        <th>Expiry Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rice</td>
+                        <td>Grains</td>
+                        <td>500 kg</td>
+                        <td>₹50/kg</td>
+                        <td>₹25,000</td>
+                        <td>30 Jun 2024</td>
+                        <td>
+                            <button class="btn btn-edit">Edit</button>
+                            <button class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wheat Flour</td>
+                        <td>Grains</td>
+                        <td>250 kg</td>
+                        <td>₹40/kg</td>
+                        <td>₹10,000</td>
+                        <td>15 Jul 2024</td>
+                        <td>
+                            <button class="btn btn-edit">Edit</button>
+                            <button class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="low-stock">
+                        <td>Cooking Oil</td>
+                        <td>Cooking Supplies</td>
+                        <td>50 L</td>
+                        <td>₹200/L</td>
+                        <td>₹10,000</td>
+                        <td>20 Aug 2024</td>
+                        <td>
+                            <button class="btn btn-edit">Edit</button>
+                            <button class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="inventory-charts">
+            <div class="chart">
+                <h3>Inventory Distribution</h3>
+                <div class="pie-chart-placeholder">Pie Chart Placeholder</div>
+            </div>
+            <div class="chart">
+                <h3>Stock Levels</h3>
+                <div class="bar-chart-placeholder">Bar Chart Placeholder</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

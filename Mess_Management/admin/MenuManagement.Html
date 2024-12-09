@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Management - Menu Management</title>
+    <link rel="stylesheet" href="MenuManagement.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <!-- Sidebar content similar to AdminDashboard -->
+            <div class="logo">
+                <h1>Mess Management</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#dashboard">Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <a href="#menu-management">Menu Management</a>
+                    </li>
+                    <!-- Other navigation items -->
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="menu-management-content">
+            <header class="main-header">
+                <h2>Menu Management</h2>
+                <div class="header-actions">
+                    <button class="btn-add-item">+ Add New Menu Item</button>
+                </div>
+            </header>
+
+            <div class="menu-categories">
+                <div class="category-tabs">
+                    <button class="tab active" data-category="breakfast">Breakfast</button>
+                    <button class="tab" data-category="lunch">Lunch</button>
+                    <button class="tab" data-category="dinner">Dinner</button>
+                    <button class="tab" data-category="snacks">Snacks</button>
+                </div>
+            </div>
+
+            <div class="menu-items-grid">
+                <!-- Breakfast Items -->
+                <div class="menu-item" data-category="breakfast">
+                    <img src="placeholder-idli.jpg" alt="Idli">
+                    <div class="item-details">
+                        <h3>Idli</h3>
+                        <p>Steamed rice cakes</p>
+                        <div class="item-actions">
+                            <span class="price">₹20</span>
+                            <div class="action-buttons">
+                                <button class="btn-edit">Edit</button>
+                                <button class="btn-delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="breakfast">
+                    <img src="placeholder-dosa.jpg" alt="Dosa">
+                    <div class="item-details">
+                        <h3>Dosa</h3>
+                        <p>Crispy rice and lentil crepe</p>
+                        <div class="item-actions">
+                            <span class="price">₹30</span>
+                            <div class="action-buttons">
+                                <button class="btn-edit">Edit</button>
+                                <button class="btn-delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lunch Items -->
+                <div class="menu-item" data-category="lunch">
+                    <img src="placeholder-thali.jpg" alt="Veg Thali">
+                    <div class="item-details">
+                        <h3>Veg Thali</h3>
+                        <p>Complete meal with multiple items</p>
+                        <div class="item-actions">
+                            <span class="price">₹100</span>
+                            <div class="action-buttons">
+                                <button class="btn-edit">Edit</button>
+                                <button class="btn-delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More menu items can be added similarly -->
+            </div>
+
+            <!-- Add Menu Item Modal (Hidden by default) -->
+            <div class="modal add-item-modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Add New Menu Item</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>Item Name</label>
+                            <input type="text" placeholder="Enter item name">
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea placeholder="Item description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Price</label>
+                            <input type="number" placeholder="Enter price">
+                        </div>
+                        <div class="form-group">
+                            <label>Category</label>
+                            <select>
+                                <option>Breakfast</option>
+                                <option>Lunch</option>
+                                <option>Dinner</option>
+                                <option>Snacks</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Upload Image</label>
+                            <input type="file" accept="image/*">
+                        </div>
+                        <div class="modal-actions">
+                            <button type="submit" class="btn-submit">Add Item</button>
+                            <button type="button" class="btn-cancel">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mess Management - Order Placement</title>
+    <link rel="stylesheet" href="OrderPlacement.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Mess Management System</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#" class="active">Order Placement</a></li>
+                    <li><a href="#">Meal History</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="order-placement">
+                <h2>Place Your Meal Order</h2>
+                
+                <div class="order-calendar">
+                    <div class="calendar-header">
+                        <button class="prev-month">&lt;</button>
+                        <h3>December 2024</h3>
+                        <button class="next-month">&gt;</button>
+                    </div>
+                    <div class="calendar-days">
+                        <div class="day">Mon</div>
+                        <div class="day">Tue</div>
+                        <div class="day">Wed</div>
+                        <div class="day">Thu</div>
+                        <div class="day">Fri</div>
+                        <div class="day">Sat</div>
+                        <div class="day">Sun</div>
+
+                        <div class="date available">1</div>
+                        <div class="date available">2</div>
+                        <div class="date available">3</div>
+                        <div class="date available">4</div>
+                        <div class="date available">5</div>
+                        <div class="date available">6</div>
+                        <div class="date available">7</div>
+                    </div>
+                </div>
+
+                <div class="meal-selection">
+                    <h3>Select Meal Type</h3>
+                    <div class="meal-types">
+                        <label class="meal-type">
+                            <input type="checkbox" name="meal" value="breakfast">
+                            <span>Breakfast</span>
+                        </label>
+                        <label class="meal-type">
+                            <input type="checkbox" name="meal" value="lunch">
+                            <span>Lunch</span>
+                        </label>
+                        <label class="meal-type">
+                            <input type="checkbox" name="meal" value="dinner">
+                            <span>Dinner</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Meal Type</th>
+                                <th>Date</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Breakfast</td>
+                                <td>Dec 8, 2024</td>
+                                <td>₹50</td>
+                            </tr>
+                            <tr>
+                                <td>Lunch</td>
+                                <td>Dec 8, 2024</td>
+                                <td>₹80</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Total</td>
+                                <td>₹130</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="order-actions">
+                    <button class="btn btn-secondary">Cancel</button>
+                    <button class="btn btn-primary">Confirm Order</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Mess Management System</p>
+        </footer>
+    </div>
+</body>
+</html>

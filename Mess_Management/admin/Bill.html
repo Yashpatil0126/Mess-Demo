@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing and Payments System</title>
+    <link rel="stylesheet" href="Bill.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Billing and Payments</h1>
+            <div class="header-actions">
+                <button class="btn btn-primary">Create Invoice</button>
+                <input type="text" placeholder="Search invoices..." class="search-input">
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#invoices">Invoices</a></li>
+                <li><a href="#payments">Payments</a></li>
+                <li><a href="#recurring">Recurring Billing</a></li>
+                <li><a href="#reports">Financial Reports</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="invoice-summary">
+                <div class="summary-cards">
+                    <div class="summary-card">
+                        <h3>Total Invoices</h3>
+                        <p class="summary-number">456</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Unpaid Invoices</h3>
+                        <p class="summary-number">32</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Total Revenue</h3>
+                        <p class="summary-number">$124,567</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="invoices">
+                <h2>Recent Invoices</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Invoice #</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>INV-2024-001</td>
+                            <td>John Doe Company</td>
+                            <td>2024-03-15</td>
+                            <td>$1,250.00</td>
+                            <td><span class="status paid">Paid</span></td>
+                            <td>
+                                <button class="btn btn-view">View</button>
+                                <button class="btn btn-download">Download</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>INV-2024-002</td>
+                            <td>Jane Smith LLC</td>
+                            <td>2024-03-16</td>
+                            <td>$875.50</td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td>
+                                <button class="btn btn-view">View</button>
+                                <button class="btn btn-download">Download</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>INV-2024-003</td>
+                            <td>Tech Solutions Inc</td>
+                            <td>2024-03-17</td>
+                            <td>$2,350.75</td>
+                            <td><span class="status overdue">Overdue</span></td>
+                            <td>
+                                <button class="btn btn-view">View</button>
+                                <button class="btn btn-download">Download</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="payment-methods">
+                <h2>Payment Methods</h2>
+                <div class="payment-method-grid">
+                    <div class="payment-method-card">
+                        <div class="payment-method-icon">💳</div>
+                        <h3>Credit Card</h3>
+                        <p>**** **** **** 4567</p>
+                        <span class="payment-method-type">Visa</span>
+                    </div>
+                    <div class="payment-method-card">
+                        <div class="payment-method-icon">🏦</div>
+                        <h3>Bank Transfer</h3>
+                        <p>Business Account</p>
+                        <span class="payment-method-type">Primary</span>
+                    </div>
+                    <div class="payment-method-card">
+                        <div class="payment-method-icon">💰</div>
+                        <h3>PayPal</h3>
+                        <p>business@example.com</p>
+                        <span class="payment-method-type">Connected</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recurring-billing">
+                <h2>Recurring Billing</h2>
+                <div class="recurring-billing-list">
+                    <div class="recurring-billing-item">
+                        <div class="recurring-billing-details">
+                            <h3>Monthly Subscription</h3>
+                            <p>Customer: Tech Solutions Inc</p>
+                        </div>
+                        <div class="recurring-billing-info">
+                            <span class="recurring-amount">$250.00</span>
+                            <span class="recurring-frequency">Monthly</span>
+                            <span class="recurring-status active">Active</span>
+                        </div>
+                    </div>
+                    <div class="recurring-billing-item">
+                        <div class="recurring-billing-details">
+                            <h3>Quarterly Maintenance</h3>
+                            <p>Customer: Jane Smith LLC</p>
+                        </div>
+                        <div class="recurring-billing-info">
+                            <span class="recurring-amount">$750.00</span>
+                            <span class="recurring-frequency">Quarterly</span>
+                            <span class="recurring-status paused">Paused</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Billing and Payments System</p>
+            <div class="footer-links">
+                <a href="#">Payment Terms</a>
+                <a href="#">Billing Policy</a>
+                <a href="#">Support</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

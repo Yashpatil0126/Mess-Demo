@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Management - Feedback & Reports</title>
+    <link rel="stylesheet" href="FeedbackAndReports.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="section-title">Mess Management Feedback & Reports</h1>
+        
+        <section class="feedback-form">
+            <h2>Submit Feedback</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Feedback Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select Category</option>
+                        <option value="food">Food Quality</option>
+                        <option value="hygiene">Hygiene</option>
+                        <option value="service">Service</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Detailed Feedback</label>
+                    <textarea id="description" name="description" required placeholder="Describe your feedback in detail..."></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Feedback</button>
+            </form>
+        </section>
+
+        <section class="reports-section">
+            <h2>Your Previous Reports</h2>
+            <div class="reports-list">
+                <div class="report-item">
+                    <div>
+                        <strong>Poor Food Quality - Breakfast</strong>
+                        <p>Submitted on: 12 Dec 2024</p>
+                    </div>
+                    <span class="report-status status-pending">Pending</span>
+                </div>
+                <div class="report-item">
+                    <div>
+                        <strong>Cleanliness Issue in Dining Hall</strong>
+                        <p>Submitted on: 05 Dec 2024</p>
+                    </div>
+                    <span class="report-status status-resolved">Resolved</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
